@@ -25,7 +25,7 @@ class App extends Component {
                 <li className="navbar-item">
                   <Link to="/" className="nav-link">
                     <font face="Courier" color="white">
-                      Todos
+                      Todos List
                     </font>
                   </Link>
                 </li>
