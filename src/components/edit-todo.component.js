@@ -77,10 +77,10 @@ export default class EditTodo extends Component {
     render() {
         return (
             <div>
-                <h3 align="center">Update Todo</h3>
+                <h3><font face="Courier">Update Todo</font></h3>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>Description: </label>
+                        <label><font face="Courier">Description: </font></label>
                         <input  type="text"
                                 className="form-control"
                                 value={this.state.todo_description}
@@ -88,7 +88,7 @@ export default class EditTodo extends Component {
                                 />
                     </div>
                     <div className="form-group">
-                        <label>Responsible: </label>
+                        <label><font face="Courier">Responsible: </font></label>
                         <input
                                 type="text"
                                 className="form-control"
@@ -106,7 +106,7 @@ export default class EditTodo extends Component {
                                     checked={this.state.todo_priority==='Low'}
                                     onChange={this.onChangeTodoPriority}
                                     />
-                            <label className="form-check-label">Low</label>
+                            <label className="form-check-label"><font face="Courier">Low</font></label>
                         </div>
                         <div className="form-check form-check-inline">
                             <input  className="form-check-input"
@@ -117,7 +117,7 @@ export default class EditTodo extends Component {
                                     checked={this.state.todo_priority==='Medium'}
                                     onChange={this.onChangeTodoPriority}
                                     />
-                            <label className="form-check-label">Medium</label>
+                            <label className="form-check-label"><font face="Courier">Medium</font></label>
                         </div>
                         <div className="form-check form-check-inline">
                             <input  className="form-check-input"
@@ -128,7 +128,7 @@ export default class EditTodo extends Component {
                                     checked={this.state.todo_priority==='High'}
                                     onChange={this.onChangeTodoPriority}
                                     />
-                            <label className="form-check-label">High</label>
+                            <label className="form-check-label"><font face="Courier">High</font></label>
                         </div>
                     </div>
                     <div className="form-check">
@@ -141,14 +141,16 @@ export default class EditTodo extends Component {
                                 value={this.state.todo_completed}
                                 />
                         <label className="form-check-label" htmlFor="completedCheckbox">
-                            Completed
+                            <font face="Courier">Completed</font>
                         </label>
                     </div>
 
                     <br />
 
                     <div className="form-group">
-                        <input type="submit" value="Update Todo" className="btn btn-primary" />
+                      <font face="Courier">
+                        <input type="submit" value="Update Todo" className="btn btn-dark" />
+                      </font>
                     </div>
                 </form>
             </div>
